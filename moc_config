@@ -1,0 +1,62 @@
+# MOC config file
+# This should be placed in ~/.moc/ with the name config
+
+ReadTags = yes
+MusicDir = “/home/veuge/Música”
+Sort = FileName
+ShowStreamErrors = yes
+Mp3IgnoreCRCErrors = yes
+Repeat = no
+Shuffle = yes
+AutoNext = yes
+
+# Default FormatString
+# %n – Track number
+# %a – Artist
+# %A – Album
+# %t – Title
+# %(X:TRUE:FALSE) – ternary expression – if X exists, do TRUE, otherwise
+# FALSE. ” – escape character (must be double, because of
+# config interpreter). man zshmisc for more info.
+FormatString = "%(a:%a :) - %(t:%t:) [%(A:%A :)]"
+
+OutputBuffer = 2048
+InputBuffer = 2048
+Prebuffering = 64
+JackOutLeft = “alsa_pcm:playback_1″
+JackOutRight = “alsa_pcm:playback_2″
+OSSDevice = /dev/dsp
+OSSMixerDevice = /dev/mixer
+OSSMixerChannel = pcm
+OSSMixerChannel2 = master
+AlsaMixer = PCM
+AlsaMixer2 = Master
+AlsaDevice = default
+ShowHiddenFiles = no
+StartInMusicDir = no
+HideFileExtension = yes
+ShowFormat = no
+ShowTime = IfAvailable
+Theme = ~/.moc/custom_theme
+MOCDir = ~/.moc
+UseMmap = no
+SavePlaylist = yes
+SyncPlaylist = yes
+ASCIILines = no
+Allow24bitOutput = yes
+TagsCacheSize = 256
+PlaylistNumbering = yes
+
+# The screen is split into two parts: playlist at the top and the directory
+# menu at the bottom. Playlist will occupy 10 lines and the directory menu
+# the rest.
+#Layout1 = "directory:0,0,50%,100% playlist:50%,0,50%,100%"
+
+# Default configuration:
+# Layout1 = “directory:0,0,100%,40% playlist:0,40%,100%,60%”
+# Layout2 = “directory:0,0,100%,100% playlist:0,0,100%,100%”
+# Layout3 = “directory:0,0,30%,100% playlist:30%,0,70%,100%”
+
+FollowPlayedFile = yes
+CanStartInPlaylist = yes
+UseCursorSelection = no

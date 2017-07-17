@@ -18,7 +18,7 @@ AutoNext = yes
 # %(X:TRUE:FALSE) – ternary expression – if X exists, do TRUE, otherwise
 # FALSE. ” – escape character (must be double, because of
 # config interpreter). man zshmisc for more info.
-FormatString = "%(a:%a :) - %(t:%t:) [%(A:%A :)]"
+FormatString = "%(a:%a:) - %(t:%t:) [%(A:%A:)]"
 
 OutputBuffer = 2048
 InputBuffer = 2048
@@ -27,9 +27,7 @@ JackOutLeft = “alsa_pcm:playback_1″
 JackOutRight = “alsa_pcm:playback_2″
 OSSDevice = /dev/dsp
 OSSMixerDevice = /dev/mixer
-OSSMixerChannel = pcm
 OSSMixerChannel2 = master
-AlsaMixer = PCM
 AlsaMixer2 = Master
 AlsaDevice = default
 ShowHiddenFiles = no
@@ -37,7 +35,7 @@ StartInMusicDir = no
 HideFileExtension = yes
 ShowFormat = no
 ShowTime = IfAvailable
-Theme = ~/.moc/custom_theme
+Theme = moc_theme
 MOCDir = ~/.moc
 UseMmap = no
 SavePlaylist = yes
